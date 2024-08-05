@@ -5,8 +5,8 @@ jobs:
     name: Building Next.js
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        name: Checkout Code
       - name: Install modules
         uses: npm i
       - name: Build project
