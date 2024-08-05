@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Install modules
-        uses: npm i
+        run: npm i
       - name: Build project
-        uses: npm run build
+        run: npm run build
