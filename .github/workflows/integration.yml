@@ -29,6 +29,8 @@ jobs:
         # if: startsWith(github.ref, 'refs/tags/')
         # run: echo ${{github.ref}}
         with:
+          name: Release ${{github.ref}}
+          tag_name: ${{github.ref}}
           files: site.zip
 
   build-project:
